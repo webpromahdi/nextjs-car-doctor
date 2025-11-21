@@ -1,6 +1,7 @@
 import dbConnect, { collectionsNameObj } from "@/lib/dbconnect";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const ServicesSection = async () => {
@@ -41,9 +42,12 @@ const ServicesSection = async () => {
                     $20.00
                   </span>
                 </div>
-                <button className="text-[#FF3811] hover:text-red-700 transition-colors p-2">
+                <Link
+                  href={`/services/${item._id}`}
+                  className="text-[#FF3811] hover:text-red-700 transition-colors p-2"
+                >
                   <ChevronRight size={24} />
-                </button>
+                </Link>
               </div>
             </div>
           </div>

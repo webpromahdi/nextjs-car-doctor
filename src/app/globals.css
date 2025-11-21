@@ -1,2 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+.overlay-bg {
+   background: #000000;
+   background: linear-gradient(23deg, rgba(0, 0, 0, 1) 0%, rgba(105, 105, 105, 0) 100%);
+}
